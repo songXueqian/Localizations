@@ -1,0 +1,15 @@
+/* 
+  Language.strings
+  Mode
+
+  Created by 宋学谦 on 2016/10/18.
+  Copyright © 2016年 宋学谦. All rights reserved.
+*/
+
+"FirstTitle" = "多语言";
+"LeftBar" = "设置";
+"AlerTitle" = "确定要切换成英文吗?";
+"cancel" = "取消";
+"sure" = "确定";
+"English" = "英文";
+"Chinese" = "中文";

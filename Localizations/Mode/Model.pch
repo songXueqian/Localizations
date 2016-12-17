@@ -1,0 +1,38 @@
+//
+//  Model.pch
+//  Mode
+//
+//  Created by 宋学谦 on 2016/10/10.
+//  Copyright © 2016年 宋学谦. All rights reserved.
+//
+
+#ifndef Model_pch
+#define Model_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define RedColor [UIColor colorWithRed:1.00 green:0.00 blue:0.00 alpha:1.00];
+
+
+/*
+//1.获取当前保存在NSUserDefaults的本地语言
+#define currentLanguage [NSString stringWithFormat:@"%@", [[NSUserDefaults standarUserDefaults] objectForKey:@"appLanguage"]];
+
+//2.获取语言文件的路经径
+#define LanguagePath [[NSBundle mainBundle] pathForResource:currentLanguage ofType:@"lproj"]
+
+//3.根据键值获取返回转换的结果
+#define Localized(key) [[NSBundle bundleWithPath:LanguagePath] localizedStringForKey:(key) value:nil table:@"language"]
+*/
+
+
+//合3为1 如下
+#define Localized(key) [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"Language"]
+
+
+
+
+
+
+#endif /* Model_pch */
